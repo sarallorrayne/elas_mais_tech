@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Semânticos</title>
+</head>
+<body>
+    <!-- No HTML só muda a semântica, o visual é alterado com CSS -->
+
+    <!-- Cabeçalho - ex: Barra de Navegação -->
+    <header>
+        <nav>Barra de navegação</nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Id: identificador ÚNICO -->
+        <section id="about-me">
+            Sobre mim
+            <!-- Figure - Envolve imagens -->
+             <figure>
+                <img src="https://avatars.githubusercontent.com/u/127709986?v=4" alt="Sara Souza - Imagem de Perfil" width="15%">
+                <!-- FigCaption - Legenda para Imagem -->
+                 <figcaption>Foto de Perfil do Github - Sara Souza</figcaption>
+             </figure>
+        </section>
+        <section id="portfolio">
+            Portfólio
+        </section>
+        <section id="blog">
+            <!-- Article - Elementos Reutilizáveis -->
+             <article>
+                <!-- "Novo escopo" - É possível reutilizar as tags principais -->
+                <header><!-- Ex: imagem do post --></header>
+
+                <main><!-- Ex: resumo do post --></main>
+
+                <footer><!-- Ex: autor ou data de publicação do post --></footer>
+             </article>
+        </section>
+    </main>
+
+    <!-- Barra Lateral - Pode ser fora ou dentro do Main -->
+    <aside>
+        Conteúdo da barra lateral
+    </aside>
+
+    <!-- Rodapé -->
+    <footer>
+        Desenvolvido por <a href="https://www.linkedin.com/in/souza-sara/">Sara Souza</a> ♡
+    </footer>
+</body>
+</html>

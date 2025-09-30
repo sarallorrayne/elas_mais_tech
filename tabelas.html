@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Tabelas no HTML</h1>
+        <!-- THEAD - Cabeçalho
+             TBODY - Corpo da tabela
+             TR - Table Row
+             TD - Table Data
+             TH - Table Head
+             Atributo RowSpan = mescla as células
+             Atributo ColSpan = mescla as colunas
+        -->
+
+        <section id="students">
+            <h2>Tabela de Alunos</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Carol Danvers</td>
+                        <td>carol.danvers@email.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Peter Park</td>
+                        <td>peter.park@email.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Tony Stark</td>
+                        <td>tony.stark@email.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="finance">
+            <h2>Tabela de Controle Financeiro</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">15/06/2022</td>
+                        <td colspan="2">Despesas</td>
+                        <!-- <td>Almoço</td> É necessário apagar o elemento mesclado-->
+                        <td>R$S35,00</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>15/06/2022</td> É necessário apagar o elemento mesclado -->
+                        <td>Receita</td>
+                        <td>Salário</td>
+                        <td>R$S3.768,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
